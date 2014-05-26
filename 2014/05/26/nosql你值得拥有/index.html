@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>NoSQL你值得拥有 | Huangqy&#39;s blog</title>
+  <meta name="author" content="huangqy">
+  
+  <meta name="description" content="hexo_blog">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="NoSQL你值得拥有"/>
+  <meta property="og:site_name" content="Huangqy&#39;s blog"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Huangqy&#39;s blog" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+
+
+<a href="https://github.com/you"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/c6286ade715e9bea433b4705870de482a654f78a/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_white_ffffff.png"></a>
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Huangqy&#39;s blog</a></h1>
+  <h2><a href="/">Happy every day</a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">首页</a></li>
+    
+      <li><a href="/">文章</a></li>
+    
+      <li><a href="/archives">存档</a></li>
+    
+      <li><a href="/about">关于</a></li>
+    
+      <li><a href="/todolist">ToDo</a></li>
+    
+	<li> <a href="/atom.xml">RSS</a> </li>
+	<li> <a href="/sitemap.xml">Sitemap</a> </li>
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2014-05-26T02:19:27.000Z"><a href="/2014/05/26/nosql你值得拥有/">2014-05-26</a></time>
+      
+      
+  
+    <h1 class="title">NoSQL你值得拥有</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>NoSQL，泛指非关系型的数据库。随着互联网web2.0网站的兴起，传统的关系数据库在应付web2.0网站，特别是超大规模和高并发的SNS类型的web2.0纯动态网站已经显得力不从心，暴露了很多难以克服的问题，而非关系型的数据库则由于其本身的特点得到了非常迅速的发展。<br><a id="more"></a></p>
+<h2 id="1-_NoSQL简介">1. NoSQL简介</h2>
+<p>NoSQL(NoSQL = Not Only SQL )，意即<strong>“不仅仅是SQL”</strong>，是一项全新的数据库革命性运动，早期就有人提出，发展至2009年趋势越发高涨。NoSQL的拥护者们提倡运用非关系型的数据存储，相对于铺天盖地的关系型数据库运用，这一概念无疑是一种全新的思维的注入。</p>
+<h2 id="2-_发展现状">2. 发展现状</h2>
+<p>现今的计算机体系结构在数据存储方面要求应用架构具备庞大的水平扩展性，而NoSQL正在致力于改变这一现状。目前新浪微博的Redis和Google的Bigtable以及Amazon的SimpleDB使用的就是NoSQL型数据库。  </p>
+<p>NoSQL项目的名字上看不出什么相同之处，但是，它们通常在某些方面相同：它们可以处理超大量的数据。  </p>
+<p>这场革命目前仍然需要等待。NoSQL对大型企业来说还不是主流，但是，一两年之后很可能就会变个样子。在NoSQL运动的最新一次聚会中，来自世界各地的150人挤满了CBS Interactive的一间会议室。分享他们如何推翻缓慢而昂贵的关系数据库的暴政，怎样使用更有效和更便宜的方法来管理数据。  </p>
+<p>关系型数据库给你强加了太多东西。它们要你强行修改对象数据，以满足数据库系统的需要。在NoSQL拥护者们来看，基于NoSQL的数据库替代方案<strong>“只是给你所需要的”</strong>。</p>
+<h2 id="3-_为什么是NoSQL">3. 为什么是NoSQL</h2>
+<p>随着互联网web2.0网站的兴起，非关系型的数据库现在成了一个极其热门的新领域，非关系数据库产品的发展非常迅速，而传统的关系型数据库在应付web2.0网站，特别是超大规模和高并发的SNS类型的web2.0纯动态网站已经显得力不从心，暴露了很多难以克服的问题，例如：  </p>
+<p><strong>1. High performance - 对数据库高并发读写的需求</strong><br>web2.0 网站要根据用户个性化信息来实时生成动态页面和提供动态信息，所以基本上无法使用动态页面静态化技术，因此数据库并发负载非常高，往往要达到每秒上万次读写请求。关系型数据库应付上万次SQL查询还勉强顶得住，但是应付上万次 SQL 写数据请求，硬盘IO 就已经无法承受了，其实对于普通的 BBS 网站，往往也存在对高并发写请求的需求。</p>
+<p><strong>2. Huge Storage - 对海量数据的高效率存储和访问的需求</strong><br>对于大型的SNS网站，每天用户产生海量的用户动态信息，以国外的Friend feed为例，一个月就达到了2.5亿条用户动态，对于关系数据库来说，在一张2.5亿条记录的表里面进行SQL查询，效率是极其低下乃至不可忍受的。再例如大型web网站的用户登录系统，例如腾讯，盛大，动辄数以亿计的帐号，关系数据库也很难应付。</p>
+<p><strong>3. High Scalability &amp;&amp; High Availability - 对数据库的高可扩展性和高可用性的需求</strong><br>在基于web的架构当中，数据库是最难进行横向扩展的，当一个应用系统的用户量和访问量与日俱增的时候，你的数据库却没有办法像web server和app server那样简单的通过添加更多的硬件和服务节点来扩展性能和负载能力。对于很多需要提供24小时不间断服务的网站来说，对数据库系统进行升级和扩展是非常痛苦的事情，往往需要停机维护和数据迁移，可是停机维护随之带来的就是公司收入的减少。</p>
+<p>在上面提到的“三高”需求面前，关系数据库遇到了难以克服的障碍，而对于web2.0网站来说，关系数据库的很多主要特性却往往无用武之地，例如：</p>
+<p><strong>1. 数据库事务一致性需求</strong><br>很多web实时系统并不要求严格的数据库事务，对读一致性的要求很低，有些场合对写一致性要求也不高。因此数据库事务管理成了数据库高负载下一个沉重的负担。</p>
+<p><strong>2. 数据库的写实时性和读实时性需求</strong><br>对关系数据库来说，插入一条数据之后立刻查询，是肯定可以读出来这条数据的，但是对于很多web应用来说，并不要求这么高的实时性。</p>
+<p><strong>3、对复杂的SQL查询，特别是多表关联查询的需求</strong><br>任何大数据量的web系统，都非常忌讳多个大表的关联查询，以及复杂的数据分析类型的复杂SQL报表查询，特别是SNS类型的网站，从需求以及产品设计角度，就避免了这种情况的产生。往往更多的只是单表的主键查询，以及单表的简单条件分页查询，SQL的功能被极大的弱化了。<br>因此，关系数据库在这些越来越多的应用场景下显得不那么合适了，为了解决这类问题的NoSQL数据库应运而生。</p>
+<p>NoSQL是非关系型数据存储的广义定义。它打破了长久以来关系型数据库与ACID理论大一统的局面。NoSQL数据存储不需要固定的表结构，通常也不存在连接操作。在大数据存取上具备关系型数据库无法比拟的性能优势，该概念在2009年初得到了广泛认同。</p>
+<p>当今的应用体系结构需要数据存储在横向伸缩性上能够满足需求。而NoSQL存储就是为了实现这个需求。Google的BigTable与Amazon的Dynamo是非常成功的商业NoSQL实现。一些开源的NoSQL体系，如Facebook的Cassandra，Apache的HBase，也得到了广泛认同。从这些NoSQL项目的名字上看不出什么相同之处：Hadoop、Voldemort、Dynomite，还有其它很多，但它们都有一个共同的特点，就是要改变大家对数据库在传统意义上的理解。</p>
+<h2 id="4-_NoSQL特点">4. NoSQL特点</h2>
+<p><strong>1. 它可以处理超大量的数据</strong></p>
+<p><strong>2. 它运行在便宜的 PC 服务器集群上</strong><br>PC集群扩充起来非常方便并且成本很低，避免了传统商业数据库“sharding”操作的复杂性和成本。</p>
+<p><strong>3. 它击碎了性能瓶颈</strong><br>NoSQL的支持者称，通过NoSQL架构可以省去将Web或Java应用和数据转换成 SQL 格式的时间，执行速度变得更快。<br>“SQL并非适用于所有的程序代码”，对于那些繁重的重复操作的数据，SQL值得花钱。但是当数据库结构非常简单时，SQL可能没有太大用处。</p>
+<p><strong>4. 它没有过多的操作</strong><br>虽然NoSQL的支持者也承认关系型数据库提供了无可比拟的功能集合，而且在数据完整性上也发挥绝对稳定，他们同时也表示，企业的具体需求可能没有那么复杂。</p>
+<p><strong>5. 它的支持者源于社区</strong><br>因为NoSQL项目都是开源的，因此它们缺乏供应商提供的正式支持。这一点它们与大多数开源项目一样，不得不从社区中寻求支持。</p>
+<h2 id="5-_优点">5. 优点</h2>
+<p><strong>易扩展</strong><br><strong>大数据量，高性能</strong><br><strong>灵活的数据模型</strong><br><strong>高可用</strong></p>
+<h2 id="6-_缺点">6. 缺点</h2>
+<p>来自开源社区的项目都有一个最大的弊病：没有正式的官方支持，万一除了差错会很可怕；此外，NoSQL没有标准规范，产品混乱。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+<nav id="pagination" >
+    
+    
+    <a href="/2014/05/26/nosql系列之走进mongodb/" class="alignright next" >下一页</a>
+    
+    <div class="clearfix"></div>
+</nav>
+
+<section id="comment">
+<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="2014-05-25-Hexo系列一" data-title="Hexo系列一" data-url="http://huangqy.github.io/2014/05/25/Hexo系列一"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"codefarmer-beiliu"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+
+</section>
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="q" value="site:huangqy.github.io">
+  </form>
+</div>
+
+  
+<div class="widget tag">
+  <h3 class="title">分类</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/blog/">blog</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">标签云</h3>
+  <div class="entry">
+    <a href="/tags/Hexo/" style="font-size: NaNpx;">Hexo</a><a href="/tags/博客/" style="font-size: NaNpx;">博客</a>
+  </div>
+</div>
+
+
+  <iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=1&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=3131474787&verifier=6ec55909&dpc=1"></iframe>
+
+  <div class="widget tag">
+<h3 class="title">友情链接</h3>
+<ul class="entry">
+<li><a href="http://huangqy.github.io" title="Huangqy's Blog">Huangqy</a></li>
+</ul>
+</div>
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2014 huangqy
+  
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>
